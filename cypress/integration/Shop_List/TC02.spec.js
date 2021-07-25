@@ -22,6 +22,7 @@ describe('Create and Edit Shopping List', function () {
     })
 
     after(() => {
-        cy.get('a.delete').click
+        cy.wait(5000)
+        cy.get('a.delete').click()
     })
  })
